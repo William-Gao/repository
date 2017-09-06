@@ -31,8 +31,8 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  String rotated = "";
-	  for (int i = 2; i < input.length + 2; i++) {
-	  	rotated = rotated + input.charAt(i % input.length);
+	  for (int i = 2; i < input.length() + 2; i++) {
+	  	rotated = rotated + input.charAt(i % input.length());
 	  }
 	  return rotated;
 	}
