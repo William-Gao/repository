@@ -43,7 +43,7 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-        String string = "";
+        String string = input;
         if (input.length() == 0) {
             return string;
         }
