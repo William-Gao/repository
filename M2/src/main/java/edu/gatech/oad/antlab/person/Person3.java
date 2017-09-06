@@ -51,4 +51,5 @@ public class Person3 {
             string = string.charAt(input.length() - i) + string;
         }
         return string;
+    }
 }

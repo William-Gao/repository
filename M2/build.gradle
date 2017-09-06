@@ -1,0 +1,18 @@
+plugins {
+    id "java"
+}
+
+defaultTasks 'jar'
+
+dependencies {
+	compile files('lib/resources.jar')
+}
+
+jar { 
+	manifest {
+		attributes(
+			'Class-Path' : '.',
+			'Main-Class': 'src.main.java.edu.gatech.oad.antlab.pkg1.AntLabMain'
+		)
+	}
+}
