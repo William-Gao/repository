@@ -31,7 +31,19 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+		String output = "";
+		if (input.length() <= 2) {
+			return input;
+		} else {
+			// hacky work around because Java is stupud
+			for (int i = 2; i < input.length(); i++) {
+				output += input.charAt(i);
+			}
+			// why this needs to be in two lines I will never know...
+			output += input.charAt(0); 
+			output += input.charAt(1);
+		}
+		return output;
 	}
 	
 	/**
